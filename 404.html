@@ -1,8 +1,6 @@
 <script>
+  // Always redirect to the root of the app, preserving query/hash
   location.replace(
-    location.pathname.replace(/\/[^\/]*$/, "/") +
-      "index.html" +
-      location.search +
-      location.hash
+    "/Saas-Subscription-billing-Platform/" + location.search + location.hash
   );
 </script>
