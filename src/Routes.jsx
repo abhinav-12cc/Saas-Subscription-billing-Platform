@@ -17,16 +17,25 @@ import NotFound from "./pages/NotFound";
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Saas-Subscription-billing-Platform/">
       <ErrorBoundary>
         <ScrollToTop />
         <RouterRoutes>
           <Route path="/login-registration" element={<LoginRegistration />} />
           <Route path="/billing-dashboard" element={<BillingDashboard />} />
           <Route path="/invoice-management" element={<InvoiceManagement />} />
-          <Route path="/subscription-management" element={<SubscriptionManagement />} />
-          <Route path="/usage-analytics-reporting" element={<UsageAnalyticsReporting />} />
-          <Route path="/payment-gateway-configuration" element={<PaymentGatewayConfiguration />} />
+          <Route
+            path="/subscription-management"
+            element={<SubscriptionManagement />}
+          />
+          <Route
+            path="/usage-analytics-reporting"
+            element={<UsageAnalyticsReporting />}
+          />
+          <Route
+            path="/payment-gateway-configuration"
+            element={<PaymentGatewayConfiguration />}
+          />
           <Route path="/customer-portal" element={<CustomerPortal />} />
           <Route path="/dunning-management" element={<DunningManagement />} />
           <Route path="/" element={<LoginRegistration />} />
